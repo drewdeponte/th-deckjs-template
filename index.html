@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<!-- REPLACE THE TITLE WITH THE TITLE FOR YOUR SLIDES -->
+	<title>ThoughtHatchery deck.js template</title>
+	
+	<meta name="description" content="A ThoughtHatchery template for slides using deck.js">
+	<meta name="author" content="Andrew De Ponte">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="deck.js/core/deck.core.css">
+  <link rel="stylesheet" href="deck.js/extensions/goto/deck.goto.css">
+  <link rel="stylesheet" href="deck.js/extensions/menu/deck.menu.css">
+  <link rel="stylesheet" href="deck.js/extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" href="deck.js/extensions/status/deck.status.css">
+  <link rel="stylesheet" href="deck.js/extensions/hash/deck.hash.css">
+	
+	<!-- Theme CSS files (menu swaps these out) -->
+	<link rel="stylesheet" id="style-theme-link" href="deck.js/themes/style/web-2.0.css">
+	<link rel="stylesheet" id="transition-theme-link" href="deck.js/themes/transition/horizontal-slide.css">
+	
+	<!-- Custom CSS just for this page -->
+	<link rel="stylesheet" href="thoughthatchery.css">
+	
+	<script src="javascript/modernizr.custom.js"></script>
+</head>
+
+<body>
+  <article class="deck-container">
+    <!-- ThoughtHatchery stuff DON'T change above this line -->
+    
+    <!-- The following div's classed "slide" are the various slides and
+         should be replaced with the HTML for your slides. You should not
+         change any of the lines past the ThoughtHatchery comment below.
+         Oh, you should probably also update the title tag in HTML head. -->
+    
+    <div class="slide" id="title-slide">
+    	<h1>ThoughtHatchery deck.js template</h1>
+    </div>
+    
+    <div class="slide" id="what-is-this">
+      <h2>What is this?</h2>
+      <p>This is ThoughtHatchery template for <a href="http://imakewebthings.github.com/deck.js/">deck.js</a>. It is designed to be used as the clean and simple template so that our speakers may easily create their slides and share them.</p>
+      
+      <div class="slide" id="where-to-from-here">
+        <h2>Where to from here?</h2>
+        <p><a href="http://imakewebthings.github.com/deck.js/">deck.js</a> is amazingly simple to use. Your slides are simply HTML content and therefore it should be a markup language we all know and interact with regularly. For more details on <a href="http://imakewebthings.github.com/deck.js/">deck.js</a> please checkout out the website at <a href="http://imakewebthings.github.com/deck.js/">http://imakewebthings.github.com/deck.js</a></p>
+      </div>
+
+      <div class="slide" id="why-is-this-so-short">
+        <h2>Why is this so short?</h2>
+        <p>Simple, because <a href="http://imakewebthings.github.com/deck.js/">deck.js</a> is simple. Beyond, that it is really just here as ThoughtHatchery template and theme so that all the ThoughtHatchery presentations are consistent. For examples I strongly recommend looking at the <a href="http://imakewebthings.github.com/deck.js/">deck.js</a> Introduction.html for examples of how to create different types of slides.</p>
+      </div>
+    </div>
+  
+    <div class="slide" id="the-end">
+      <h1>The End</h1>
+    </div>
+
+
+    <!-- ThoughtHatchery stuff DON'T change below this line -->
+    <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+    <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+    <p class="th-plug">
+      <a href="http://thoughthatchery.com">ThoughtHatchery - The OC Rails Group</a>
+    </p>
+
+    <p class="deck-status">
+    	<span class="deck-status-current"></span>
+    	/
+    	<span class="deck-status-total"></span>
+    </p>
+
+    <form action="." method="get" class="goto-form">
+    	<label for="goto-slide">Go to slide:</label>
+    	<input type="number" name="slidenum" id="goto-slide">
+    	<input type="submit" value="Go">
+    </form>
+
+    <a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+  
+  </article>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.1.min.js">\x3C/script>')</script>
+
+  <!-- Deck Core and extensions -->
+  <script src="deck.js/core/deck.core.js"></script>
+  <script src="deck.js/extensions/menu/deck.menu.js"></script>
+  <script src="deck.js/extensions/goto/deck.goto.js"></script>
+  <script src="deck.js/extensions/status/deck.status.js"></script>
+  <script src="deck.js/extensions/navigation/deck.navigation.js"></script>
+  <script src="deck.js/extensions/hash/deck.hash.js"></script>
+  
+  <script type="text/javascript">
+    $(function() {
+    	// Deck initialization
+    	$.deck('.slide');
+    });
+  </script>
+</body>
+
+</html>
